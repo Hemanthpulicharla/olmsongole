@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v9 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="{{url_for('static',filename='colorlib-regform-25/fonts/linearicons/style.css')}}">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{{url_for('static',filename='colorlib-regform-25/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css')}}">
+
+		<!-- DATE-PICKER -->
+		<link rel="stylesheet" href="{{url_for('static',filename='colorlib-regform-25/vendor/date-picker/css/datepicker.min.css')}}">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{{url_for('static',filename='colorlib-regform-25/css/style.css')}}">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="{{url_for('leavesubmit',student_id=student.id)}}" method='post' enctype=multipart/form-data>
+					<h3>Get a leave</h3>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Name *</label>
+							<input type="text" class="form-control" placeholder="Your Name" required>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Phone(parents) *</label>
+							<input type="text" class="form-control" placeholder="Phone" name="contact" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Branch *</label>
+							<input type="text" class="form-control" placeholder="Mechanical" required>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Id Number *</label>
+							<input type="text" class="form-control" placeholder="o170000" required="">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="" >Leave Starts *</label>
+							<span class="lnr lnr-calendar-full"></span>
+							<input type="date" class="form-control datepicker-here" data-language='en' data-date-format="dd M yyyy" id="dp1" name="fromdate">
+						</div>
+						<div class="form-wrapper">
+							<label for="" required="">Leave ends *</label>
+							<span class="lnr lnr-calendar-full"></span>
+							<input type="date" class="form-control datepicker-here" data-language='en'  data-date-format="dd M yyyy" id="dp2" name="todate">
+						</div>
+					</div>
+					<div class="form-row last">
+						<div class="form-wrapper">
+							<label for="" >Warden *</label>
+							<select name="warden" id="" class="form-control" required="">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Reason *</label>
+							<select name="reason" id="" class="form-control" required="">
+								<option value="sick">sick</option>
+								<option value="competitive exam">competitive exam</option>
+								<option value="vacation">vacation</option>
+								<option value="medical checkup">medical checkup</option>
+								<option value="Home sick">Home sick</option>
+								<option value="Others">Other</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<div class="form-wrapper">
+							<label for="">Validation cert*</label>
+							<span class="lnr"></span>
+							<input type="file" name='file' class="form-control" data-language='en'>
+						</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" required=""> I'm Wholly resposible for my journey.
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<a href="{{url_for('leavesubmit',student_id=student.id)}}"><button data-text="Get a Leave">
+						<span>Get Leave</span>
+					</button></a>
+				</form>
+			</div>
+		</div>
+		
+		<script src="{{url_for('static',filename='colorlib-regform-25/js/jquery-3.3.1.min.js')}}"></script>
+
+		<!-- DATE-PICKER -->
+		<script src="{{url_for('static',filename='colorlib-regform-25/vendor/date-picker/js/datepicker.js')}}"></script>
+		<script src="{{url_for('static',filename='colorlib-regform-25/vendor/date-picker/js/datepicker.en.js')}}"></script>
+
+		<script src="{{url_for('static',filename='colorlib-regform-25/js/main.js')}}"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
