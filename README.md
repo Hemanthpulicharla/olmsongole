@@ -1,9 +1,11 @@
 # olmsongole
-This repository contains files for the leave management of students in a university..
-Steps to be followed before excuting the files.... Step1: Install Gitbash if you are on windows machine (No nedd if you are on linux or any of their open source distributions) S
-tep2: Need to install virtualBox with vagrant environment setup(No nedd if you are on Linuc or any of their distribution) 
-Step3:After setting up environment(environment must be setup inside these files directory after extracting) open Gitbash(inside this directory) and run these two "vagrant up" and "vagrant ssh" one after another Step4: Run Olms_main python file and open your browser to see the site at localhost 5000 ip address 
-Step5:You can change anything inside the inputstoolms.py file in order to setuo it for your organisation and also some tweaking in website heading needed
+Welcome to the RGUKT Ongole Campus Leave Management System repository!
+
+This repository contains the website files for a leave management system developed by Hemanth, a student at RGUKT Ongole campus. The system is designed to streamline the process of requesting and approving leave for students and faculty at the university.
+
+With this system, users can easily submit leave requests, view their leave history, and track the status of their requests. The system also includes an administrative panel for faculty members to review and approve leave requests.
+
+We hope that this system will help make the leave process more efficient and convenient for everyone at RGUKT Ongole campus. Thank you for visiting and we hope you find the repository helpful!
 
 And this is the working(website) of this files.... 
 https://ongole.herokuapp.com
